@@ -1,3 +1,16 @@
+/* TODO: 
+- Make some responsive classes 
+- use purge css
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.chats-panel {
+  flex: 35%
+}
+
+.content-panel { 
+  flex:65%;
+}
