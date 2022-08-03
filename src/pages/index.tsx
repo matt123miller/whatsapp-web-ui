@@ -1,9 +1,45 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ChatListHeader, ChatWindowHeader, WideContainer } from "../components";
+import {
+  ChatItem,
+  ChatListHeader,
+  ChatWindowHeader,
+  WideContainer,
+} from "../components";
 
 const Home: NextPage = () => {
-  const allChats = [];
+  const allChats = [
+    {
+      title: "chattitle",
+      imageSrc: "",
+      lastUpdatedDate: new Date(),
+      previewContent: "preview",
+    },
+    {
+      title: "chattitle",
+      imageSrc: "",
+      lastUpdatedDate: new Date(),
+      previewContent: "preview",
+    },
+    {
+      title: "chattitle",
+      imageSrc: "",
+      lastUpdatedDate: new Date(),
+      previewContent: "preview",
+    },
+    {
+      title: "chattitle",
+      imageSrc: "",
+      lastUpdatedDate: new Date(),
+      previewContent: "preview",
+    },
+    {
+      title: "chattitle",
+      imageSrc: "",
+      lastUpdatedDate: new Date(),
+      previewContent: "preview",
+    },
+  ];
 
   return (
     <>
@@ -21,6 +57,10 @@ const Home: NextPage = () => {
           <WideContainer className="text-dead-white">
             <ChatListHeader />
           </WideContainer>
+          {/* Chat list */}
+          {allChats.map((chat, i) => {
+            return <ChatItem key={i} chat={chat} />;
+          })}
         </div>
         <div className="content-panel h-screen bg-midnight-black border border-blue-600">
           <WideContainer className="text-dead-white">

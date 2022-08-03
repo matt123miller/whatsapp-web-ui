@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaSearch, FaEllipsisV } from "react-icons/fa";
+import PlaceholderImage from "../../PlaceholderImage";
 function ChatWindowHeader() {
   const chatMembers = [
     "Matt",
@@ -14,14 +15,7 @@ function ChatWindowHeader() {
   return (
     <div className="flex grow justify-between">
       <div className="grow-0 my-auto">
-        <img
-          src="https://via.placeholder.com/64"
-          alt=""
-          srcSet=""
-          width="32px"
-          height="32px"
-          className="align-middle rounded-full border border-white"
-        />
+        <PlaceholderImage />
       </div>
       <div className="ml-4 my-auto flex flex-col grow">
         <span className="text-white font-bold">Chat Title</span>

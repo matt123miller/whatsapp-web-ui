@@ -1,19 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaCircle, FaEllipsisV, FaEnvelopeOpenText } from "react-icons/fa";
+import PlaceholderImage from "../../PlaceholderImage";
 
 function ChatListHeader() {
   return (
     <div className="flex grow justify-between">
       <div className="grow my-auto">
-        <img
-          src="https://via.placeholder.com/64"
-          alt=""
-          srcSet=""
-          width="32px"
-          height="32px"
-          className="align-middle rounded-full border border-white"
-        />
+        <PlaceholderImage />
       </div>
 
       <div className="ml-4 my-auto flex flex-row grow-0">
