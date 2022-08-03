@@ -1,0 +1,3 @@
+☐ ChatList
+  ☐ ChatListItem - represents a specific chat, shows some high level info
+    - image, chat name, last active date, last message

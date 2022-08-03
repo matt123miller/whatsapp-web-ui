@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { WideContainer } from "../components";
+import { ChatListHeader, ChatWindowHeader, WideContainer } from "../components";
 
 const Home: NextPage = () => {
   const allChats = [];
@@ -18,10 +18,15 @@ const Home: NextPage = () => {
 
       <div className="flex">
         <div className="chats-panel h-screen bg-dark-grey border border-green-600">
-          <WideContainer className="text-dead-white">Hello left</WideContainer>
+          <WideContainer className="text-dead-white">
+            <ChatListHeader />
+          </WideContainer>
         </div>
         <div className="content-panel h-screen bg-midnight-black border border-blue-600">
-          <WideContainer className="text-dead-white">Hello right</WideContainer>
+          <WideContainer className="text-dead-white">
+            <ChatWindowHeader />
+            <div></div>
+          </WideContainer>
         </div>
       </div>
     </>

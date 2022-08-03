@@ -6,11 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .chats-panel {
-  flex: 35%
+  flex: 35%;
 }
 
-.content-panel { 
-  flex:65%;
+.content-panel {
+  flex: 65%;
 }
