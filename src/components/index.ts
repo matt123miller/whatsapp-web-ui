@@ -1,5 +1,5 @@
 export { default as WideContainer } from "./WideContainer";
-export { default as Search } from "./Search";
+export { default as SearchBar } from "./ChatList/SearchBar";
 export { default as ChatItem } from "./ChatList/ChatItem";
 export { default as ChatListHeader } from "./ChatList/ChatListHeader";
 export { default as ChatWindowHeader } from "./ChatWindow/Header";

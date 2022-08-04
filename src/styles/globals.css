@@ -13,3 +13,7 @@
 .content-panel {
   flex: 65%;
 }
+
+.bg-default {
+  @apply bg-slate-700;
+}

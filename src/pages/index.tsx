@@ -6,6 +6,7 @@ import {
   ChatWindowHeader,
   WideContainer,
 } from "../components";
+import SearchBar from "../components/ChatList/SearchBar";
 
 const Home: NextPage = () => {
   const allChats = [
@@ -52,21 +53,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex">
+      <div className="flex text-white">
         <div className="chats-panel h-screen bg-dark-grey border border-green-600">
-          <WideContainer className="text-dead-white">
+          <div className="flex h-14 p-2 text-dead-white border-b border-b-white">
             <ChatListHeader />
-          </WideContainer>
+          </div>
+          <div className="flex h-10 border-b border-b-white bg-dark-grey">
+            <SearchBar />
+          </div>
           {/* Chat list */}
-          {allChats.map((chat, i) => {
+          {/* {allChats.map((chat, i) => {
             return <ChatItem key={i} chat={chat} />;
-          })}
+          })} */}
         </div>
         <div className="content-panel h-screen bg-midnight-black border border-blue-600">
-          <WideContainer className="text-dead-white">
+          <div className="flex h-14 p-2 text-dead-white border-b border-b-white">
             <ChatWindowHeader />
-            <div></div>
-          </WideContainer>
+          </div>
+          <div className="flex ">chat content</div>
         </div>
       </div>
     </>
