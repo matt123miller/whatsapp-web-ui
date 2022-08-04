@@ -1,7 +1,16 @@
 import React from "react";
 import PlaceholderImage from "../../PlaceholderImage";
 
-function ChatItem(props) {
+type Props = {
+  chat: {
+    title: string;
+    imageSrc: string;
+    lastUpdatedDate: Date;
+    previewContent: string;
+  };
+};
+
+const ChatItem: React.FC<Props> = (props: Props) => {
   const { title, imageSrc, lastUpdatedDate, previewContent } = props.chat;
 
   return (
@@ -20,6 +29,6 @@ function ChatItem(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ChatItem;

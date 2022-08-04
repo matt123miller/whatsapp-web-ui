@@ -1,10 +1,12 @@
-import React from "react";
+import React, { ChildContextProvider } from "react";
 import NextImage from "next/image";
-import clsx from "clsx";
+import clsx, { ClassValue } from "clsx";
 
-// Maybe this is just a quick and dirty image placeholder
+type Props = {
+  className?: ClassValue;
+};
 
-function PlaceholderImage({ className }) {
+const PlaceholderImage: React.FC<Props> = ({ className }: Props) => {
   return (
     <img
       className={clsx("rounded-full", className)}
@@ -13,6 +15,6 @@ function PlaceholderImage({ className }) {
       src="https://image-placeholder.com/images/actual-size/75x75.png"
     />
   );
-}
+};
 
 export default PlaceholderImage;

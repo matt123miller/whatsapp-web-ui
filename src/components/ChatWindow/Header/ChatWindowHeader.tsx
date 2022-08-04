@@ -2,7 +2,8 @@
 import React from "react";
 import { FaSearch, FaEllipsisV } from "react-icons/fa";
 import PlaceholderImage from "../../PlaceholderImage";
-function ChatWindowHeader() {
+
+const ChatWindowHeader = () => {
   const chatMembers = [
     "Matt",
     "Merolyn",
@@ -28,6 +29,6 @@ function ChatWindowHeader() {
       </div>
     </div>
   );
-}
+};
 
 export default ChatWindowHeader;

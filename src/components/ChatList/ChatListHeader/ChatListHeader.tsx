@@ -3,7 +3,7 @@ import React from "react";
 import { FaCircle, FaEllipsisV, FaEnvelopeOpenText } from "react-icons/fa";
 import PlaceholderImage from "../../PlaceholderImage";
 
-function ChatListHeader() {
+const ChatListHeader = () => {
   return (
     <div className="flex grow justify-between">
       <div className="grow my-auto">
@@ -17,6 +17,6 @@ function ChatListHeader() {
       </div>
     </div>
   );
-}
+};
 
 export default ChatListHeader;
