@@ -15,5 +15,5 @@
 }
 
 .bg-default {
-  @apply bg-slate-700;
+  @apply bg-background-chat;
 }

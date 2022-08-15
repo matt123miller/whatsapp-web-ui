@@ -7,40 +7,10 @@ import {
   WideContainer,
 } from "../components";
 import SearchBar from "../components/ChatList/SearchBar";
+import { exampleData } from "./exampleData";
 
 const Home: NextPage = () => {
-  const allChats = [
-    {
-      title: "chattitle",
-      imageSrc: "",
-      lastUpdatedDate: new Date(),
-      previewContent: "preview",
-    },
-    {
-      title: "chattitle",
-      imageSrc: "",
-      lastUpdatedDate: new Date(),
-      previewContent: "preview",
-    },
-    {
-      title: "chattitle",
-      imageSrc: "",
-      lastUpdatedDate: new Date(),
-      previewContent: "preview",
-    },
-    {
-      title: "chattitle",
-      imageSrc: "",
-      lastUpdatedDate: new Date(),
-      previewContent: "preview",
-    },
-    {
-      title: "chattitle",
-      imageSrc: "",
-      lastUpdatedDate: new Date(),
-      previewContent: "preview",
-    },
-  ];
+  const allChats = exampleData;
 
   return (
     <>
@@ -62,9 +32,9 @@ const Home: NextPage = () => {
             <SearchBar />
           </div>
           {/* Chat list */}
-          {/* {allChats.map((chat, i) => {
+          {allChats.map((chat, i) => {
             return <ChatItem key={i} chat={chat} />;
-          })} */}
+          })}
         </div>
         <div className="content-panel h-screen bg-midnight-black border border-blue-600">
           <div className="flex h-14 p-2 text-dead-white border-b border-b-white">
