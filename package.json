@@ -16,6 +16,11 @@
     "@trpc/next": "^9.27.2",
     "@trpc/react": "^9.27.2",
     "@trpc/server": "^9.27.2",
+    "@faker-js/faker": "^7.4.0",
+    "@heroicons/react": "^1.0.6",
+    "clsx": "^1.2.0",
+    "date-fns": "^2.29.1",
+    "react-icons": "^4.4.0",
     "next": "12.2.5",
     "next-auth": "^4.10.3",
     "react": "18.2.0",
@@ -42,9 +47,3 @@
     "initVersion": "5.9.0"
   }
 }
-
-    "@faker-js/faker": "^7.4.0",
-    "@heroicons/react": "^1.0.6",
-    "clsx": "^1.2.0",
-    "date-fns": "^2.29.1",
-    "react-icons": "^4.4.0"
